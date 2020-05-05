@@ -21,7 +21,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
-      - run: yarn test
       - run:
         name: Install JUnit coverage reporter
         command: yarn add --dev jest-junit
